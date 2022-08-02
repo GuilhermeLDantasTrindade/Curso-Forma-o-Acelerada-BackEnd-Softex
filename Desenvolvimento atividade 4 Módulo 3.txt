@@ -4,6 +4,7 @@ print("Para realizar as operações desejadas, favor inserir os dados abaixo: \n
 numero1 = float(input("Favor inserir o primeiro número: \n"))
 numero2 = float(input("Favor inserir o segundo número: \n"))
 operacao = int(input("Favor informar a operação pretendida:\n\n1-Soma\n\n2-Subtração\n\n3-Multiplicação\n\n4-Divisão\n\n"))
+
 def calculadora_softex3000(numero1,numero2, operacao):
     if (operacao == 1):
         res = numero1+numero2
