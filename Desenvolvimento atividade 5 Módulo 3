@@ -1,0 +1,27 @@
+def calculadora(operacao):
+  numero1 = int(input("\nDigite o primeiro número: "))
+  numero2 = int(input("\nDigite o segundo número: "))
+  if operacao == 1:
+    resultado = numero1+numero2
+  elif operacao == 2:
+    resultado = numero1-numero2
+  elif operacao == 3:
+    resultado = numero1*numero2
+  elif operacao == 4:
+    resultado = numero1/numero2
+    
+  return resultado 
+
+operacao=1
+while operacao !=0:
+  print("\n\nCalculadora\n\n")
+  print("Escolha uma das opções abaixo: ")
+  print("\n1:Soma\n\n2:Subtração\n\n3:Multiplicação\n\n4:Divisão\n\n0:Sair\n\n")
+  operacao=int(input("Digite o número da operação optada: "))      
+  if operacao !=0 and operacao<5:
+    resultado = calculadora(operacao)
+    print("\nO resultado da operação é: ", resultado)
+  elif operacao == 0:
+    print("\nDesligando a calculadora!")
+  else:
+    print("\nEssa opção não existe!")
