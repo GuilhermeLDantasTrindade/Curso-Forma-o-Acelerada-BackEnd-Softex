@@ -20,7 +20,7 @@ while operacao !=0:
   operacao=int(input("Digite o número da operação optada: "))      
   if operacao !=0 and operacao<5:
     resultado = calculadora(operacao)
-    print("\nO resultado da operação é: ", resultado)
+    print("\nO resultado da operação é:", resultado)
   elif operacao == 0:
     print("\nDesligando a calculadora!")
   else:
