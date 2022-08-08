@@ -1,0 +1,21 @@
+def calculadora_idade_atual(ano_nascimento):
+    nome = str(input("Informe seu nome completo: "))
+    ano_atual = 2022
+    idade = ano_atual - ano_nascimento
+    print(nome,"a idade que você tem ou terá no ano atual(2022) é:", idade)
+    return idade
+
+#ano_nasc = False
+while True:
+    try:
+        ano_nascimento = int(input("\nInforme o seu ano de nascimento: "))
+        if(ano_nascimento >=1922 and ano_nascimento<=2021):
+            idade = calculadora_idade_atual(ano_nascimento)
+            break
+        else:
+             print ("Erro! Ano informado fora dos parâmetros, favor informar um ano entre 1922 e 2021") 
+    except ValueError:
+        print("Erro! Ano informado fora dos parâmetros")
+
+
+
