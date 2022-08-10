@@ -1,0 +1,46 @@
+opcao = "N"
+votos_candidato_X = 0
+votos_candidato_Y = 0
+votos_candidato_Z = 0
+votos_branco = 0
+votos_nulo = 0
+while(opcao=="N"):
+    try:
+        print("\nNúmeros dos candidatos:\n")
+        print("-Candidato X: 889")
+        print("-Candidato Y: 847")
+        print("-Candidato Z: 515")
+        print("-Branco: 0\n")
+        voto=int(input("Informe o número do seu candidato:"))
+        if(voto==889):
+          votos_candidato_X = votos_candidato_X + 1
+        elif(voto==847):
+            votos_candidato_Y = votos_candidato_Y + 1
+        elif(voto==515):
+            votos_candidato_Z = votos_candidato_Z + 1
+        elif(voto==0):
+            votos_branco = votos_branco + 1
+        else:
+            votos_nulo = votos_nulo + 1
+        print("Deseja finalizar a votação? \n")
+        opcao = str (input("S/N: "))
+        if(opcao == "S"):
+            print("Votação finalizada, obrigado por exercer seu direito como cidadão!")
+    except ValueError:
+        print("Erro!Você não inseriu um número, vote novamente!")
+
+print("\nRESULTADO DAS ELEIÇÕES:\n")
+if(votos_candidato_X>votos_candidato_Y and votos_candidato_X>votos_candidato_Z):
+    print("O candidato x foi eleito com: ", votos_candidato_X, "votos")
+elif(votos_candidato_Y>votos_candidato_X and votos_candidato_Y>votos_candidato_Z):
+    print("O candidato y foi eleito com: ", votos_candidato_Y, "votos")
+elif(votos_candidato_Z>votos_candidato_X and votos_candidato_Z>votos_candidato_Y):
+    print("O candidato z foi eleito com: ", votos_candidato_Z, "votos")
+else:
+    print("Houve empate! Haverá segundo turno\n")
+print("O candidato x teve", votos_candidato_X, "votos")
+print("O candidato y teve", votos_candidato_Y, "votos")
+print("O candidato z teve", votos_candidato_Z, "votos")
+print("Nessas eleições tiveram um total de", votos_branco, "votos em branco")
+print("Nessas eleições tiveram um total de", votos_nulo, "votos nulos")
+
