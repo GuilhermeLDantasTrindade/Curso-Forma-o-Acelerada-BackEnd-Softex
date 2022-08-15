@@ -22,23 +22,23 @@ class Jogadores:
 print("RELAÇÃO DOS JOGADORES ESCRITOS NA COMPETIÇÃO PELO SPORT CLUB DO RECIFE EM 2022 NO RETURNO DO CAMPEONATO BRASILEIRO DA SÉRIE B\n")
 
 jogador1=Jogadores()
-jogador1.registro_jogadores_contratados('Roberto','Zagueiro','Definitivo\n' )
+jogador1.registro_jogadores_contratados("Roberto","Zagueiro","Definitivo\n" )
 jogador1.cadastro_de_jogadores()
 
 jogador2=Jogadores()
-jogador2.registro_jogadores_contratados('Perez', 'Atacante', 'Empréstimo\n')
+jogador2.registro_jogadores_contratados("Perez", "Atacante", "Empréstimo\n")
 jogador2.cadastro_de_jogadores()
 
 jogador3=Jogadores()
-jogador3.registro_jogadores_contratados('Paulo', 'Volante', 'Empréstimo\n')
+jogador3.registro_jogadores_contratados("Paulo", "Volante", "Empréstimo\n")
 jogador3.cadastro_de_jogadores()
 
 jogador4=Jogadores()
-jogador4.registro_jogadores_contratados('Carlos','Meio-campo', 'Definitivo\n')
+jogador4.registro_jogadores_contratados("Carlos","Meio-campo", "Definitivo\n")
 jogador4.cadastro_de_jogadores()
 
 jogador5=Jogadores()
-jogador5.registro_jogadores_contratados('Tonhão', 'Zagueiro', 'Definitivo\n')
+jogador5.registro_jogadores_contratados("Tonhão", "Zagueiro", "Definitivo\n")
 jogador5.cadastro_de_jogadores()
 
 print("\nO número de jogadores que o Sport registrou nessa janela de transferências foi no total de:", Jogadores.total_jogadores_do_Sport )
