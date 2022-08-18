@@ -9,7 +9,6 @@ class Aluno_Softex:
         self.__matricula = matricula 
        
     def get_nome(self):
-       #print("Nome do aluno:", self.__nome)
        return self.__nome
     
     def set_nome(self, nome):
