@@ -1,0 +1,17 @@
+# Estruture três códigos, os quais devem conter uma função de manipulação de string que obtenha resultado.
+
+cabecalho = "ficha cadastral"
+print(cabecalho.upper())
+
+nome = input("\nInforme o seu nome: ")
+def primeiras_letras_maiusculas_nome(nome):
+    nome=nome.title()
+    print("Nome: ",nome)
+cidade = input("\nInforme a sua cidade: ")
+def primeira_letra_maiuscula_cidade(cidade):
+    cidade=cidade.capitalize()
+    print("\nCidade: ",cidade)
+check_List = "check-list dados já cadastrados"
+print("\n",check_List.upper(), "\n")
+primeiras_letras_maiusculas_nome(nome)
+primeira_letra_maiuscula_cidade(cidade)
