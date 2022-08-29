@@ -1,0 +1,67 @@
+//Crie um exemplo de como funcionam a serialização e a desserialização de um sistema qualquer. 
+//Utilize as classes, os objetos e métodos padrões da Java e insira um endereço físico fictício.
+import java.io.Serializable;
+import java.io.*;
+
+public class Conta implements Serializable{
+    private String nome;
+    private String senha;
+    private double saldo;
+
+  
+    public String getNome(){
+        return this.nome;
+    }
+
+    public setNome(String Nome){
+        this.nome = Nome;
+    }
+
+    public String getSenha(){
+        return senha;
+    }
+
+    public setSenha(int Senha){
+        this.senha = Senha 
+    }
+
+    public double getSaldo(){
+        return saldo;
+    }
+
+    public setSaldo(double Saldo){
+        this.saldo = Saldo
+    }
+}
+public class ContaBancaria{
+    public static void main(String[] args) throws IOException {
+        ContaBancaria contaBancaria1 = new ContaBancaria();       
+        
+        System.out.println("Dando início a serialização do objeto")
+        
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        FileOutputStream fos = new FileOutputStream("conta.bco");
+        oos.writeObject(contaBancaria1);
+
+        System.out.println("Objeto devidamente serializado");
+
+        oos.close();
+        fos.close()
+            
+        System.out.println("Dando início a desserialização do objeto");
+        
+        
+        ObjectInputStream ois = new ObjectInputStream(fis)
+        FileInputStream fis = new FileInputStream("conta.bco");
+        ContaBancaria contaBancaria1 = (Conta)ObjectInputStream.readObject();
+
+        System.out.println("Objeto devidamente serializado");
+
+        ois.close();
+        fis.close();
+    }
+}
+     
+     
+
+
