@@ -1,0 +1,18 @@
+public class Time{
+
+    public static void main(String[] args) {
+        try {
+            int[] titulares_Inscritos = new int[11];
+
+            for(int jogadores_Inscritos != 0; jogadores_Inscritos<=11; jogadores_Inscritos++){
+                titulares_Inscritos[jogadores_Inscritos]= jogadores_Inscritos
+                System.ou.println(jogadores_Inscritos);
+            }
+            
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Quantidade insuficiente de jogadores inscritos para essa competição");
+        }
+        
+    }
+}
+
