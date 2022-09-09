@@ -1,0 +1,26 @@
+import pandas as pd
+
+boletim=pd.read_csv("notas_aluno.csv")
+
+media_aluno=boletim(["nota_1"]+["nota_2"])/2 
+boletim["media"] = media_aluno
+situacao=boletim([media_aluno]+["faltas"])
+boletim["situacao"] = situacao
+
+boletim.loc[boletim["faltas"]<=5 | boletim[media_aluno]>=7, situacao]= "APROVADO"
+boletim.loc[boletim[media_aluno]<7 | boletim["faltas"]>5, situacao] = "REPROVADO"
+
+boletim.to_csv("alunos_situacao.csv")
+
+mais_faltas = boletim["faltas"].max()
+media_geral = boletim["media"].median()
+maior_media = boletim["media"].max()
+    
+print("Maior número de faltas: " + str(mais_faltas))
+print("Média da turma: " + str(media_geral))
+print("Maior média de aluno: " + str(maior_media))
+    
+
+
+
+
