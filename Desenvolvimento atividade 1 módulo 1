@@ -1,0 +1,24 @@
+//Acesse pelo menos dois sites de sua preferência e os inspecione com o botão direito do mouse na página web.
+//Com o código fonte aberto você deve: 
+//Verificar no código algum elemento que utilize JavaScript; 
+//Marcar alguns elementos do site; 
+//Explicar como ele se comporta. Exemplo: entrar no site do Google, inspecionar o botão de pesquisa, verificar o código e 
+//explicar qual a finalidade do botão. 
+
+//https://www.linkedin.com/feed/
+//Nesse sítio eu inspecionei o botão "Escrever artigo", o qual permite que o usuário escreva algo para compartilhar com a sua rede
+<a href="/post/new/" id="ember2007" class="ember-view share-box-feed-entry-toolbar__item artdeco-button artdeco-button--muted artdeco-button--tertiary artdeco-button--4" aria-label="Escrever artigo no LinkedIn">
+          <li-icon aria-hidden="true" type="content-align-left" size="medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+  <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
+</svg></li-icon>
+          <span class="share-box-feed-entry-toolbar__item-text">
+            Escrever artigo
+          </span>
+        </a>
+
+//https://www.deezer.com/br/show/4543627
+//Nesse site inspencionei o botão com o formato de um coração vazado, o qual, ao ser clicado pelo usuário,
+//adiciona o podcast aos seus favoritos
+
+<button type="button" class="chakra-button css-6cuuuw" aria-label="Adicionar"><svg viewBox="0 0 16 16" focusable="false" class="chakra-icon css-1yk3h4a" data-testid="HeartIcon" aria-hidden="true"><path d="m8 4.79-.755-.869c-1.17-1.348-2.252-1.832-3.093-1.9-.836-.067-1.59.263-2.164.858C.802 4.108.528 6.283 2.04 7.812a245.96 245.96 0 0 0 4.775 4.7c.482.46.882.837 1.186 1.122.304-.285.704-.663 1.186-1.123a238.026 238.026 0 0 0 4.771-4.695 3.545 3.545 0 0 0 .057-4.963c-.572-.589-1.324-.915-2.161-.843-.843.072-1.926.562-3.098 1.911L8 4.791zm6.672 3.725C10.78 12.452 8 15 8 15s-2.78-2.548-6.672-6.485c-3.717-3.76 1.043-10.549 5.976-5.972.232.215.464.455.696.723.232-.267.464-.508.696-.723C13.63-2.04 18.39 4.68 14.672 8.515z"></path><path d="m8 4.79-.755-.869c-1.17-1.348-2.252-1.832-3.093-1.9-.836-.067-1.59.263-2.164.858C.802 4.108.528 6.283 2.04 7.812a245.96 245.96 0 0 0 4.775 4.7c.482.46.882.837 1.186 1.122.304-.285.704-.663 1.186-1.123a238.026 238.026 0 0 0 4.771-4.695 3.545 3.545 0 0 0 .057-4.963c-.572-.589-1.324-.915-2.161-.843-.843.072-1.926.562-3.098 1.911L8 4.791zm6.672 3.725C10.78 12.452 8 15 8 15s-2.78-2.548-6.672-6.485c-3.717-3.76 1.043-10.549 5.976-5.972.232.215.464.455.696.723.232-.267.464-.508.696-.723C13.63-2.04 18.39 4.68 14.672 8.515z"></path></svg></button>
+        
